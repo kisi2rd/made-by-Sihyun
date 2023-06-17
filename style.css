@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+.booklist {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b222b;
+    padding: 8px 12px;
+}
+
+.booklist__logo {
+    font-size: 24px;
+    color: white;
+}
+
+.booklist__logo i {
+    color: #667ad4;
+}
+
+.booklist__menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.booklist__menu li {
+    padding: 8px 12px;
+}
+
+.booklist__menu li:hover {
+    background-color: #d49466;
+    border-radius: 4px;
+}
+
+.booklist__links {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0;
+}
+
+.booklist__links li {
+    padding: 8px 12px;    
+}
+
+.booklist__toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: #d49466;
+}
+
+@media screen and (max-width: 768px) {
+    .booklist {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .booklist__menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .booklist__menu li {
+        width: 100%;
+        text-align: center;
+    }
+    .booklist__links {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .booklist__toogleBtn{
+        display: block;
+    }
+
+    .booklist__menu.active,
+    .booklist__links.active{
+        display: flex;
+    }
+}
+
+    body {background-image: url("./moon.jpg");
+    }   
+
+
+ .item {
+    color: white;
+    font-size: 22px;
+    background-color: #8b97df;
+    height: 360px; 
+ }
+
+ .item2 {
+    color: white;
+    font-size: 22px;
+    background-color: #667ad4;
+ }
+
+ .item3 {
+    color: white;
+    font-size: 22px;
+    background-color: #4d66d3;
+ }
